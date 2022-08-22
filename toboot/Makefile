@@ -2,7 +2,7 @@ PACKAGE    = toboot
 ADD_CFLAGS =
 ADD_LFLAGS = 
 
-GIT_VERSION= $(shell git describe --tags)
+GIT_VERSION= $(shell git describe --tags --dirty='*')
 TRGT      ?= arm-none-eabi-
 CC         = $(TRGT)gcc
 OBJCOPY    = $(TRGT)objcopy
